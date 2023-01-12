@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 body {
   height: 100vh;
   margin: 0;
@@ -11,7 +12,7 @@ body {
 ul {
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 16px;
   margin: 50px;
   font-size: 18px;
 }
@@ -28,6 +29,7 @@ img {
 .container {
   display: flex;
   flex: 1;
+  flex-direction: column;
 }
 
 .header,
@@ -54,13 +56,39 @@ img {
   flex: 1;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 5%;
 }
 
 .section h2 {
   font-size: 48px;
+  margin: 20px;
 }
 
-.text {
+.section-one {
+  background-color: #1f2937;
+  color: white;
+}
+
+.section-content {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
   padding: 32px;
+}
+
+.form-link {
+  background-color: rgb(43, 128, 226);
+  width: 150px;
+  height: 75px;
+  color: white;
+  border: 0;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.form-link:hover {
+  cursor: pointer;
+  background-color: rgb(20, 69, 124);
+  transition: 150ms linear;
 }
