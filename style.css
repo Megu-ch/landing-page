@@ -53,29 +53,47 @@ img {
 
 .section {
   display: flex;
-  flex-wrap: wrap;
   flex: 1;
   justify-content: center;
   align-items: center;
-  padding: 12px;
+  gap: 10%;
+  padding: 32px;
 }
 
-.section h2 {
+.section-one .section-content h2 {
   font-size: 48px;
-  margin: 20px;
+  margin: 0;
+  color: #F9FAF8;
 }
 
+.section-one .section-content p {
+  color: #E5E7EB;
+}
 .section-one {
   background-color: #1f2937;
   color: white;
 }
 
+.section-two {
+  flex-direction: column;
+}
+
 .section-content {
   display: flex;
-  flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
-  padding: 32px;
+  flex: 1;
+}
+
+.column {
+  flex-flow: column;
+}
+
+.row {
+  flex-flow: row;
+}
+
+.section-one .section-content {
+  max-width: 40%;
 }
 
 .form-link {
@@ -92,4 +110,15 @@ img {
   cursor: pointer;
   background-color: rgb(20, 69, 124);
   transition: 150ms linear;
+}
+
+.game-thumbnail {
+  display: flex;
+  flex-flow: column;
+  flex-basis: 15%;
+}
+
+.section-two .section-content {
+  gap: 5%;
+  flex-wrap: wrap;
 }
