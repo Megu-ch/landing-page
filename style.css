@@ -63,11 +63,11 @@ img {
 .section-one .section-content h2 {
   font-size: 48px;
   margin: 0;
-  color: #F9FAF8;
+  color: #f9faf8;
 }
 
 .section-one .section-content p {
-  color: #E5E7EB;
+  color: #e5e7eb;
 }
 .section-one {
   background-color: #1f2937;
@@ -79,8 +79,8 @@ img {
 }
 
 .section-three {
-  background-color: #E5E7EB;
-  color: #1F2937;
+  background-color: #e5e7eb;
+  color: #1f2937;
 }
 
 .section-content {
