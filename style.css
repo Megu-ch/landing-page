@@ -53,29 +53,62 @@ img {
 
 .section {
   display: flex;
-  flex-wrap: wrap;
   flex: 1;
   justify-content: center;
   align-items: center;
-  padding: 12px;
+  gap: 10%;
+  padding: 32px;
 }
 
-.section h2 {
+.section-one .section-content h2 {
   font-size: 48px;
-  margin: 20px;
+  margin: 0;
+  color: #f9faf8;
 }
 
+.section-one .section-content p {
+  color: #e5e7eb;
+}
 .section-one {
   background-color: #1f2937;
   color: white;
 }
 
+.section-two {
+  flex-direction: column;
+}
+
+.section-three {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+
 .section-content {
   display: flex;
-  flex-flow: column wrap;
   justify-content: center;
-  align-items: center;
-  padding: 32px;
+  flex: 1;
+}
+
+.column {
+  flex-flow: column;
+}
+
+.row {
+  flex-flow: row;
+}
+
+.section-one .section-content {
+  max-width: 40%;
+}
+
+.section-three .section-content h2 {
+  text-align: center;
+}
+
+.section-three .section-content p {
+  text-align: left;
+  font-style: italic;
+  font-size: 24px;
 }
 
 .form-link {
@@ -92,4 +125,29 @@ img {
   cursor: pointer;
   background-color: rgb(20, 69, 124);
   transition: 150ms linear;
+}
+
+.section-two .section-content .game-thumbnail {
+  display: flex;
+  flex-flow: column;
+  flex-basis: 15%;
+}
+
+.section-three .section-content .game-thumbnail {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 0 200px;
+  font-size: 20px;
+}
+
+.section-two .section-content {
+  gap: 5%;
+  flex-wrap: wrap;
+}
+
+.section-four .section-content {
+  display: flex;
+  align-items: center;
+  gap: 100px;
 }
